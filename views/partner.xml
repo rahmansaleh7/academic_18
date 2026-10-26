@@ -1,0 +1,45 @@
+<odoo>
+    <data>
+
+        <!-- List View -->
+        <record id="view_partner_form_inherit" model="ir.ui.view">
+            <field name="name">Partner</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='vat']" position="after">
+                    <field name="is_instructor" widget="boolean_toggle"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_res_partner_filter_academic" model="ir.ui.view">
+            <field name="name">res.partner.filter.academic</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                <filter name="inactive" position="before">
+                    <filter string="Is Instructor" name="is_instructor" domain="[('is_instructor', '=', True)]"/>
+                    <separator/>
+                </filter>
+            </field>
+        </record>
+
+        <record id="action_instructur_lis" model="ir.actions.act_window">
+            <field name="name">Instructors</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">kanban,list,form</field>
+            <field name="context">{'search_default_is_instructor': 1,
+                                   'default_is_instructor': True}</field>
+            <field name="search_view_id" ref="base.view_res_partner_filter"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add a new instructor
+                </p><p>
+                    Click the create button to enter a new instructor.
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,79 @@
+<odoo>
+    <data>
+
+        <!-- List View -->
+        <record id="view_attendee_list" model="ir.ui.view">
+            <field name="name">Attendee</field>
+            <field name="model">academic.attendee</field>
+            <field name="type">list</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="partner_id"/>
+                    <field name="session_id"/>
+                    <field name="course_id"/>
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Search View -->
+        <record id="view_attendee_search" model="ir.ui.view">
+            <field name="name">Attendee Search</field>
+            <field name="model">academic.attendee</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="partner_id"/>
+                    <field name="session_id"/>
+                    <field name="course_id"/>
+                    <group expand="0" string="Group By">
+                        <filter name="by_course" string="Course"
+                                context="{'group_by': 'course_id'}"/>
+                        <filter name="by_session" string="Session"
+                                context="{'group_by': 'session_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+
+        <!-- Form View -->
+        <record id="view_attendee_form" model="ir.ui.view">
+            <field name="name">Attendee Form</field>
+            <field name="model">academic.attendee</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="partner_id" class="oe_edit_only" string="Name"/>
+                            <h1>
+                                <field name="partner_id"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="session_id"/>
+                                <field name="course_id"/>
+                                <field name="name"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_attendee" model="ir.actions.act_window">
+            <field name="name">Attendees</field>
+            <field name="res_model">academic.attendee</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add a new attendee
+                </p><p>
+                    Click the create button to enter a new attendee.
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

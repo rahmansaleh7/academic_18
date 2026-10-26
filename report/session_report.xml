@@ -1,0 +1,70 @@
+<odoo>
+    <data>
+
+        <!-- 1. template: tampilan laporan -->
+        <template id="session_doc">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <h2 t-field="doc.name"/>
+                            <table class="table table-sm table-borderless mt-3">
+                                <tr>
+                                    <td class="fw-bold" style="width: 25%;">Course</td>
+                                    <td><span t-field="doc.course_id"/></td>
+                                    <td class="fw-bold" style="width: 25%;">Start Date</td>
+                                    <td><span t-field="doc.start_date"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Instructor</td>
+                                    <td><span t-field="doc.instructor_id"/></td>
+                                    <td class="fw-bold">End Date</td>
+                                    <td><span t-field="doc.end_date"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Seats</td>
+                                    <td><span t-field="doc.seats"/></td>
+                                    <td class="fw-bold">Duration</td>
+                                    <td><span t-field="doc.duration"/> day(s)</td>
+                                </tr>
+                            </table>
+
+                            <h4 class="mt-4">Attendees</h4>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 10%;">No</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="doc.attendee_ids" t-as="a">
+                                        <tr>
+                                            <td t-out="a_index + 1"/>
+                                            <td><span t-field="a.partner_id"/></td>
+                                            <td><span t-field="a.partner_id.email"/></td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <!-- 2. action: memunculkan tombol Print -->
+        <record id="report_session" model="ir.actions.report">
+            <field name="name">Session Report</field>
+            <field name="model">academic.session</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">academic.session_doc</field>
+            <field name="report_file">academic.session_doc</field>
+            <field name="print_report_name">'Session - %s' % object.name</field>
+            <field name="binding_model_id" ref="model_academic_session"/>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

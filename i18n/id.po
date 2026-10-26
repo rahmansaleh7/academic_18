@@ -1,0 +1,427 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* academic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-24 01:50+0000\n"
+"PO-Revision-Date: 2026-10-24 01:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: academic
+#: model:ir.actions.report,print_report_name:academic.report_session
+msgid "'Session - %s' % object.name"
+msgstr ""
+
+#. module: academic
+#: model:ir.module.category,name:academic.module_category_academic
+#: model:ir.ui.menu,name:academic.academic_0
+#: model:ir.ui.menu,name:academic.academic_1
+msgid "Academic"
+msgstr "Akademik"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_session__active
+msgid "Active"
+msgstr "Aktif"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.view_academic_wizard_form
+msgid "Add"
+msgstr "Tambah"
+
+#. module: academic
+#: model:ir.actions.act_window,name:academic.action_wizard
+#: model_terms:ir.ui.view,arch_db:academic.view_academic_wizard_form
+msgid "Add Attendees"
+msgstr "Tambah Peserta"
+
+#. module: academic
+#: model:ir.model,name:academic.model_academic_wizard
+msgid "Add Attendees to Sessions"
+msgstr "Tambah Peserta ke Sesi"
+
+#. module: academic
+#: model_terms:ir.actions.act_window,help:academic.action_attendee
+msgid "Add a new attendee"
+msgstr "Tambah peserta baru"
+
+#. module: academic
+#: model_terms:ir.actions.act_window,help:academic.action_course
+msgid "Add a new course"
+msgstr "Tambah kursus baru"
+
+#. module: academic
+#: model_terms:ir.actions.act_window,help:academic.action_instructur_lis
+msgid "Add a new instructor"
+msgstr "Tambah instruktur baru"
+
+#. module: academic
+#: model_terms:ir.actions.act_window,help:academic.action_session
+msgid "Add a new session"
+msgstr "Tambah sesi baru"
+
+#. module: academic
+#. odoo-python
+#: code:addons/academic/models/session.py:0
+msgid "Add seats or remove attendees"
+msgstr "Tambah kursi atau kurangi peserta"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.view_session_search
+msgid "Archived"
+msgstr "Diarsipkan"
+
+#. module: academic
+#: model:ir.model,name:academic.model_academic_attendee
+#: model:ir.ui.menu,name:academic.menu_academic_attendee
+msgid "Attendee"
+msgstr "Peserta"
+
+#. module: academic
+#: model:ir.actions.act_window,name:academic.action_attendee
+#: model:ir.model.fields,field_description:academic.field_academic_session__attendee_ids
+#: model:ir.model.fields,field_description:academic.field_academic_wizard__partner_ids
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+#: model_terms:ir.ui.view,arch_db:academic.view_session_form
+msgid "Attendees"
+msgstr "Peserta"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.view_academic_wizard_form
+msgid "Cancel"
+msgstr "Batal"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_course__catatan
+msgid "Catatan"
+msgstr "Catatan"
+
+#. module: academic
+#: model_terms:ir.actions.act_window,help:academic.action_attendee
+msgid "Click the create button to enter a new attendee."
+msgstr "Klik tombol buat untuk menambahkan peserta baru."
+
+#. module: academic
+#: model_terms:ir.actions.act_window,help:academic.action_course
+msgid "Click the create button to enter a new course."
+msgstr "Klik tombol buat untuk menambahkan kursus baru."
+
+#. module: academic
+#: model_terms:ir.actions.act_window,help:academic.action_instructur_lis
+msgid "Click the create button to enter a new instructor."
+msgstr "Klik tombol buat untuk menambahkan instruktur baru."
+
+#. module: academic
+#: model_terms:ir.actions.act_window,help:academic.action_session
+msgid "Click the create button to enter a new session."
+msgstr "Klik tombol buat untuk menambahkan sesi baru."
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.view_session_form
+msgid "Confirm"
+msgstr "Konfirmasi"
+
+#. module: academic
+#: model:ir.model.fields.selection,name:academic.selection__academic_session__state__confirmed
+#: model_terms:ir.ui.view,arch_db:academic.view_session_search
+msgid "Confirmed"
+msgstr "Terkonfirmasi"
+
+#. module: academic
+#: model:ir.model,name:academic.model_res_partner
+msgid "Contact"
+msgstr "Kontak"
+
+#. module: academic
+#. odoo-python
+#: code:addons/academic/models/course.py:0
+msgid "Copy of %s"
+msgstr "Salinan %s"
+
+#. module: academic
+#: model:ir.model,name:academic.model_academic_course
+#: model:ir.model.fields,field_description:academic.field_academic_attendee__course_id
+#: model:ir.model.fields,field_description:academic.field_academic_session__course_id
+#: model:ir.ui.menu,name:academic.menu_academic_course
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+#: model_terms:ir.ui.view,arch_db:academic.view_attendee_search
+#: model_terms:ir.ui.view,arch_db:academic.view_session_search
+msgid "Course"
+msgstr "Kursus"
+
+#. module: academic
+#: model:ir.model.constraint,message:academic.constraint_academic_course_name_unique
+msgid "Course name must be unique"
+msgstr "Nama kursus harus unik"
+
+#. module: academic
+#: model:ir.actions.act_window,name:academic.action_course
+msgid "Courses"
+msgstr "Kursus"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_attendee__create_uid
+#: model:ir.model.fields,field_description:academic.field_academic_course__create_uid
+#: model:ir.model.fields,field_description:academic.field_academic_session__create_uid
+#: model:ir.model.fields,field_description:academic.field_academic_wizard__create_uid
+msgid "Created by"
+msgstr "Dibuat oleh"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_attendee__create_date
+#: model:ir.model.fields,field_description:academic.field_academic_course__create_date
+#: model:ir.model.fields,field_description:academic.field_academic_session__create_date
+#: model:ir.model.fields,field_description:academic.field_academic_wizard__create_date
+msgid "Created on"
+msgstr "Dibuat pada"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_course__description
+msgid "Description"
+msgstr "Deskripsi"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.view_course_form
+msgid "Details"
+msgstr "Detail"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_attendee__display_name
+#: model:ir.model.fields,field_description:academic.field_academic_course__display_name
+#: model:ir.model.fields,field_description:academic.field_academic_session__display_name
+#: model:ir.model.fields,field_description:academic.field_academic_wizard__display_name
+msgid "Display Name"
+msgstr "Nama Tampilan"
+
+#. module: academic
+#: model:ir.model.fields.selection,name:academic.selection__academic_session__state__done
+#: model_terms:ir.ui.view,arch_db:academic.view_session_form
+#: model_terms:ir.ui.view,arch_db:academic.view_session_search
+msgid "Done"
+msgstr "Selesai"
+
+#. module: academic
+#: model:ir.model.fields.selection,name:academic.selection__academic_session__state__draft
+#: model_terms:ir.ui.view,arch_db:academic.view_session_search
+msgid "Draft"
+msgstr "Draf"
+
+#. module: academic
+#: model:ir.model.fields,help:academic.field_academic_session__duration
+msgid "Durasi (hari)"
+msgstr "Durasi (hari)"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_session__duration
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+msgid "Duration"
+msgstr "Durasi"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+msgid "Email"
+msgstr "Email"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_session__end_date
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+msgid "End Date"
+msgstr "Tanggal Selesai"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.view_attendee_search
+#: model_terms:ir.ui.view,arch_db:academic.view_session_search
+msgid "Group By"
+msgstr "Kelompokkan"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_attendee__id
+#: model:ir.model.fields,field_description:academic.field_academic_course__id
+#: model:ir.model.fields,field_description:academic.field_academic_session__id
+#: model:ir.model.fields,field_description:academic.field_academic_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_session__image
+msgid "Image"
+msgstr "Gambar"
+
+#. module: academic
+#. odoo-python
+#: code:addons/academic/models/session.py:0
+msgid "Incorrect seats value"
+msgstr "Nilai kursi tidak valid"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_session__instructor_id
+#: model:ir.ui.menu,name:academic.menu_academic_instructor
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+#: model_terms:ir.ui.view,arch_db:academic.view_session_search
+msgid "Instructor"
+msgstr "Instruktur"
+
+#. module: academic
+#. odoo-python
+#: code:addons/academic/models/attendee.py:0
+#: code:addons/academic/models/session.py:0
+msgid "Instructor cannot be an attendee"
+msgstr "Instruktur tidak boleh menjadi peserta"
+
+#. module: academic
+#: model:ir.actions.act_window,name:academic.action_instructur_lis
+msgid "Instructors"
+msgstr "Instruktur"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_res_partner__is_instructor
+#: model:ir.model.fields,field_description:academic.field_res_users__is_instructor
+#: model_terms:ir.ui.view,arch_db:academic.view_res_partner_filter_academic
+msgid "Is Instructor"
+msgstr "Instruktur"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_attendee__write_uid
+#: model:ir.model.fields,field_description:academic.field_academic_course__write_uid
+#: model:ir.model.fields,field_description:academic.field_academic_session__write_uid
+#: model:ir.model.fields,field_description:academic.field_academic_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Terakhir Diperbarui oleh"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_attendee__write_date
+#: model:ir.model.fields,field_description:academic.field_academic_course__write_date
+#: model:ir.model.fields,field_description:academic.field_academic_session__write_date
+#: model:ir.model.fields,field_description:academic.field_academic_wizard__write_date
+msgid "Last Updated on"
+msgstr "Terakhir Diperbarui pada"
+
+#. module: academic
+#: model:res.groups,name:academic.group_manager
+msgid "Manager"
+msgstr "Manajer"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.view_session_search
+msgid "My Courses"
+msgstr "Kursus Saya"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_attendee__name
+#: model:ir.model.fields,field_description:academic.field_academic_course__name
+#: model:ir.model.fields,field_description:academic.field_academic_session__name
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+#: model_terms:ir.ui.view,arch_db:academic.view_attendee_form
+#: model_terms:ir.ui.view,arch_db:academic.view_session_form
+msgid "Name"
+msgstr "Nama"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+msgid "No"
+msgstr "No"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_session__seats
+msgid "Number of seats"
+msgstr "Jumlah kursi"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_attendee__partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.view_session_form
+msgid "Reset to Draft"
+msgstr "Kembalikan ke Draf"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_course__responsible_id
+msgid "Responsible"
+msgstr "Penanggung Jawab"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+msgid "Seats"
+msgstr "Kursi"
+
+#. module: academic
+#. odoo-python
+#: code:addons/academic/models/session.py:0
+msgid "Seats cannot be negative"
+msgstr "Jumlah kursi tidak boleh negatif"
+
+#. module: academic
+#: model:ir.model,name:academic.model_academic_session
+#: model:ir.model.fields,field_description:academic.field_academic_attendee__session_id
+#: model:ir.ui.menu,name:academic.menu_academic_session
+#: model_terms:ir.ui.view,arch_db:academic.view_attendee_search
+msgid "Session"
+msgstr "Sesi"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.view_session_calendar
+msgid "Session Calendar"
+msgstr "Kalender Sesi"
+
+#. module: academic
+#: model:ir.actions.report,name:academic.report_session
+msgid "Session Report"
+msgstr "Laporan Sesi"
+
+#. module: academic
+#: model:ir.actions.act_window,name:academic.action_session
+#: model:ir.model.fields,field_description:academic.field_academic_course__session_ids
+#: model:ir.model.fields,field_description:academic.field_academic_wizard__session_ids
+#: model_terms:ir.ui.view,arch_db:academic.view_course_form
+msgid "Sessions"
+msgstr "Sesi"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_session__start_date
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+#: model_terms:ir.ui.view,arch_db:academic.view_session_search
+msgid "Start Date"
+msgstr "Tanggal Mulai"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_session__state
+#: model_terms:ir.ui.view,arch_db:academic.view_session_search
+msgid "Status"
+msgstr "Status"
+
+#. module: academic
+#: model:ir.model.fields,field_description:academic.field_academic_session__taken_seats
+msgid "Taken Seats"
+msgstr "Kursi Terisi"
+
+#. module: academic
+#: model:ir.model.constraint,message:academic.constraint_academic_course_name_desc_check
+msgid "Title and description must differ"
+msgstr "Judul dan deskripsi harus berbeda"
+
+#. module: academic
+#. odoo-python
+#: code:addons/academic/models/session.py:0
+msgid "Too many attendees"
+msgstr "Peserta terlalu banyak"
+
+#. module: academic
+#: model:res.groups,name:academic.group_user
+msgid "User"
+msgstr "Pengguna"
+
+#. module: academic
+#: model_terms:ir.ui.view,arch_db:academic.session_doc
+msgid "day(s)"
+msgstr "hari"
